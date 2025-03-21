@@ -30,10 +30,9 @@ events_df = load_data_events()
 users_df = load_data_users()
 campaigns_df = campaigns()
 
-
 # Sidebar - Campaign Definition
 st.sidebar.header("Load Campaign")
-campaign_name_load = st.sidebar.selectbox("Campaign Name",campaigns_df['NAME'].unique(),index=None)
+campaign_name_load = st.sidebar.selectbox("Campaign Name",campaigns_df['NAME'].unique())
 
 # Sidebar - Campaign Definition
 st.sidebar.header("Create Campaign")
